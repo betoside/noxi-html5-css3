@@ -1,0 +1,736 @@
+:root {
+    --verde-padrao: #79a80c;
+    --azul-txt: #0b3c54;
+    --texto-padrao: #5e5e56;
+    --laranja: #ffa800;
+    --cinza-claro: #bec5c9;
+}
+
+.dn { display: none !important;}
+
+* { font-family: 'Montserrat', sans-serif; color: var(--texto-padrao); }
+header { margin-bottom: 83px; }
+header .container-fluid { 
+    padding-top: 24px; min-height: 443px; background: url(../img/bg-head-empresa-2.jpg) center; 
+    border-bottom: 9px solid var(--verde-padrao); 
+    display: flex; align-items: center; flex-direction: column; 
+}
+
+    header .secao-servicos { background-image: url(../img/bg-head-servicos.jpg); }
+    header .secao-clientes { background-image: url(../img/bg-head-clientes.jpg); }
+    header .secao-responsabilidades { background-image: url(../img/bg-head-responsabilidades.jpg); }
+    header .secao-contato { background-image: url(../img/bg-head-contato.jpg); }
+
+.logo-menu { z-index: 1; background: #fff; padding: 7px 0; width: 100%; max-width: 1230px; height: 130px; display: flex; justify-content: space-between; align-items: center; }
+.logo-menu .logo { padding-left: 33px; }
+
+
+header .menu--icon {
+    display: none;
+    width: 28px;
+    height: 27px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    cursor: pointer;
+}
+header .menu--icon div {
+    height: 2px;
+    background-color: var(--header-color);
+}
+
+nav { padding-right: 50px; }
+nav ul,
+nav li {  margin: 0; padding: 0; list-style: none; }
+nav ul { display: flex; }
+nav li { padding: 0 16px; }
+nav li a { text-decoration: none; font-weight: bold; font-size: 20px; color: var(--azul-txt); }
+nav li a:hover,
+nav .active a { color: var(--verde-padrao); }
+
+header h1 { margin-top: 142px; color: #fff; width: 100%; width: 100%; max-width: 1230px; padding-left: 33px; }
+
+header.secao-home .container-fluid { 
+    padding-top: 24px; 
+    height: 100vh;
+    /* background: var(--laranja); */
+    position: relative;
+}
+.container-carrossel-header {
+    /* background: var(--laranja);  */
+    position: absolute; width: 100%; height: 100%; left: 0; top: 0;
+    z-index: 0;
+}
+.style-home-header { padding-right: 0; padding-left: 0; }
+.style-home-header .glider div { 
+    /* background-color: #000;  */
+    height: calc(100vh - 9px); 
+    /* display: flex; justify-content: center; align-items: center; */
+    /* text-align: center; */
+    /* padding-top: 60px; */
+    /* padding-left: 50px; */
+}
+.style-home-header .glider div a { text-decoration: none;}
+.style-home-header .titulo-slider {
+    width: 550px; 
+    /*display: flex; flex-direction: column;*/ 
+    /* margin-left: -250px; */
+    /* border: 1px solid #fff; */
+    /* word-wrap:normal; */
+    /* word-break:keep-all; */
+    /* word-wrap: break-word; */
+    /* white-space:pre-line; */
+    padding-top: 220px;
+    padding-left: 130px;
+    line-height: 64px;
+
+}
+.style-home-header .titulo-slider .frase { 
+    display: inline; background: rgba(121, 168, 12, 0.8); font-size: 67px; color: #fff; text-transform: uppercase; 
+}
+.style-home-header .titulo-slider .saiba-mais { 
+    font-size: 27px; text-transform: unset; color: #fff; text-decoration: underline; 
+    text-align: right; display: block; 
+    /* background: #f00;  */
+}
+.style-home-header .container-dots { display: flex; justify-content: center; align-items: center;}
+.style-home-header .dots { margin-top: -89px; z-index: 1; position: relative; background: rgba(121, 168, 12, 0.8);}
+.glider-dot:hover, 
+.glider-dot:focus, 
+.glider-dot.active { background: #fe6a10; }
+
+
+.geral { width: 100%; max-width: 1230px; padding: 0 30px; margin: 0 auto; font-size: 22px; color: var(--texto-padrao); }
+.geral p { margin-bottom: 20px; }
+.widget-foto-texto { display: flex; margin-bottom: 74px; }
+.widget-foto-texto .foto { width: 48%; }
+.txt-empresa-1 {
+    background: url(../img/txt-empresa-1.jpg) center;
+    background-size: cover;
+}
+.txt-empresa-2 {
+    background: url(../img/txt-empresa-2.jpg) center;
+    background-size: cover;
+}
+.txt-empresa-3 {
+    background: url(../img/txt-empresa-3.jpg) center;
+    background-size: cover;
+}
+.widget-foto-texto .texto { flex: 1; padding: 57px 0; font-size: 22px; }
+.widget-foto-texto .texto .bg { background: #fff; width: 141%; padding: 40px; margin-left: -41%; }
+
+.titulo-secao,
+.widget-foto-texto h2 { font-size: 30px; font-weight: bold; text-transform: uppercase; margin-bottom: 30px; color: var(--verde-padrao); }
+.widget-foto-texto .texto .bg p { margin-bottom: 30px; }
+.widget-foto-texto .texto .bg p:last-child { margin-bottom: 0; }
+.widget-foto-texto.opc-3 .texto .bg { text-align: right; }
+.widget-foto-texto.opc-3 .texto .bg { width: 100%; padding: 20px 10px; margin-left: -20%; }
+
+.titulo-detalhe { display: flex; justify-content:flex-end; align-items: center; margin-top: -57px; margin-bottom: 57px; }
+.titulo-detalhe .title { margin-bottom: 0; }
+.titulo-detalhe .linha { width: 130px; height: 3px; background-color: var(--laranja); margin-left: 43px; }
+
+.opc-2 .foto { order: 2;}
+.opc-2 .texto { order: 1; position: relative;}
+.opc-2 .titulo-detalhe { justify-content: start; align-items: center;}
+.opc-2 .titulo-detalhe .title { order: 2;}
+.opc-2 .titulo-detalhe .linha { order: 1; margin-left: 0; margin-right: 43px;}
+.widget-foto-texto.opc-2 .texto .bg { text-align: right;}
+.widget-foto-texto.opc-2 .texto .bg { width: 120%; padding: 20px; margin-left: 0; margin-right: -20%;}
+
+.mb-100 { margin-bottom: 100px; }
+
+.widget-foto-texto.opc-2 .texto .txt-left { text-align: left; }
+
+.txt-responsabilidade-1 {
+    background: url(../img/txt-responsabilidade-1.jpg) center;
+    background-size: cover;
+}
+.txt-responsabilidade-2 {
+    background: url(../img/txt-responsabilidade-2.jpg) center;
+    background-size: cover;
+}
+
+.box-linha { height: 10px; position: relative; margin-bottom: 50px; }
+.box-linha .vertical { width: 3px; height: 130px; background-color: var(--laranja); position: absolute; right: 0; bottom: 0; }
+
+.lista-clientes { display: flex; flex-wrap: wrap; margin-bottom: 125px; }
+.lista-clientes .cliente {  padding: 20px; width: 25%; }
+.lista-clientes .cliente img {  max-width: 100%; }
+.lista-clientes .cliente .brd { border: 1px solid #e3e4e4; display: flex; justify-content: center; align-items: center; height: 265px; }
+
+.bd { border: 1px solid #000;}
+.bg { background: var(--cinza-claro); }
+.bt-form { font-size: 22px; text-transform: uppercase; color: #fff; border: none; background-color: var(--laranja); padding: 5px 15px; }
+
+.formulario-clientes { width: 50%; padding-left: 20px; margin-bottom: 150px; }
+.formulario-clientes .titulo-form { display: flex; justify-content: start; align-items: flex-start; }
+.formulario-clientes .titulo-form .title { font-size: 30px; font-weight: bold; text-transform: uppercase; margin-bottom: 30px; color: var(--verde-padrao); }
+.formulario-clientes .titulo-form .linha { width: 130px; height: 3px; background-color: var(--laranja); margin-right: 43px; margin-top: 15px; }
+.formulario-clientes div { margin-bottom: 30px; }
+.formulario-clientes .tel-whats { margin-bottom: 0px; display: flex; }
+.formulario-clientes .tel-whats div { flex: 1; }
+.formulario-clientes .tel-whats div:nth-child(1) { padding-right: 15px; }
+.formulario-clientes .tel-whats div:nth-child(2) { padding-left: 15px; }
+.formulario-clientes .bt-container { text-align: right; }
+.formulario-clientes input { width: 100%; padding: 12px; }
+.formulario-clientes textarea { width: 100%; height: 163px; padding: 12px; }
+
+.img-servicos { width: 100%; height: 249px; margin-bottom: 30px; background-size: cover; background: url(../img/txt-servicos-2.png) no-repeat center; }
+
+.titulo-padrao { display: flex; justify-content: start; align-items: center; margin-bottom: 35px; }
+.titulo-padrao.direita { justify-content:flex-end; }
+.titulo-padrao .title { font-size: 30px; font-weight: bold; text-transform: uppercase; color: var(--verde-padrao); margin-bottom: 0; }
+.titulo-padrao .linha { width: 130px; height: 3px; background-color: var(--laranja); margin-right: 43px; }
+.widget-servico { margin-bottom: 100px; }
+.widget-servico-corpo { margin-bottom: 40px; }
+
+.contato { display: flex; margin-bottom: 20px; }
+.contato .formulario { flex: 2; padding-right: 40px; }
+.contato .formulario div { margin-bottom: 30px; }
+.contato .formulario div textarea,
+.contato .formulario div input { width: 100%; padding: 8px 12px; font-size: 22px; color: var(--laranja); }
+.contato .formulario div input::-webkit-input-placeholder { color: var(--laranja); }
+.contato .formulario div input:-moz-placeholder { /* Firefox 18- */ color: var(--laranja); }
+.contato .formulario div input::-moz-placeholder {  /* Firefox 19+ */ color: var(--laranja); }
+.contato .formulario div input:-ms-input-placeholder { color: var(--laranja); }
+.contato .formulario div textarea,::placeholder { color: var(--laranja); }
+
+.contato .formulario .tel-whats,
+.contato .formulario .cidade-estado { margin-bottom: 0; display: flex; }
+.contato .formulario .tel-whats div,
+.contato .formulario .cidade-estado div { flex: 1; }
+
+.contato .formulario .tel-whats div:nth-child(1),
+.contato .formulario .cidade-estado div:nth-child(1) { padding-right: 15px; }
+.contato .formulario .tel-whats div:nth-child(2),
+.contato .formulario .cidade-estado div:nth-child(2) { padding-left: 15px; }
+.contato .formulario .bt-container { text-align: right; }
+
+.contato .endereco { width: 38%; font-size: 27px; }
+.contato .endereco * { color: var(--azul-txt); }
+.contato .endereco strong { color: var(--verde-padrao); }
+.contato .endereco p { margin-bottom: 50px; }
+.contato .endereco .box-linha { height: 1px; margin-bottom: 0px; }
+
+footer .container-fluid { min-height: 399px; display: flex; flex-direction: column; align-items: center; padding-top: 25px; background: url(../img/rodape.jpg) no-repeat center; }
+footer .logo { margin-bottom: 15px; }
+footer .endereco { margin-bottom: 20px; font-weight: 600;font-size: 30px;color: var(--azul-txt);text-align: center; }
+footer .email,
+footer .email a { font-size: 40px; font-weight: bold; color: #fff; }
+
+
+.carrossel-contain { position: relative; padding-left: 37px; padding-right: 32px; }
+.glider-prev,
+.glider-next { top: 37%; font-family: 'Open Sans', sans-serif; font-size: 50px; font-weight: 700; color: var(--verde-padrao); }
+.glider-prev { left: -3px; }
+.glider-next { right: -3px;}
+    
+    .style-clientes-home .glider-prev,
+    .style-clientes-home .glider-next { 
+        top: 37%; font-family: sans-serif; font-size: 50px; font-weight: normal; color: var(--laranja); 
+        width: 25px;height: 30px;text-indent: -9999px;
+    }
+    .style-clientes-home .glider-prev { background: url(../img/glider-prev.png) no-repeat center;}
+    .style-clientes-home .glider-next { background: url(../img/glider-next.png) no-repeat center;} 
+    
+    .style-clientes-home div div { display: flex; justify-content: center; align-items: center;}
+
+.caixa-miniatura { position: relative; }
+.caixa-miniatura .veu-lupa { 
+    position: absolute; width: 98%; height: 100%; background-color: rgba(255, 168, 0, 0.8);
+    display: none; justify-content: center; align-items: center; 
+}
+.caixa-miniatura:hover .veu-lupa { display: flex; }
+
+/* .conheca-noxi {} */
+.conheca-noxi .container { display: flex; flex-direction: column; margin-bottom: 60px;}
+
+.conheca-noxi .box-conheca { background: var(--azul-txt); padding: 60px 0 80px; }
+.conheca-noxi .box-conheca .titulo { font-weight: bold; font-size: 30px; color: var(--verde-padrao); text-transform: uppercase; text-align: center; margin-bottom: 38px; }
+.conheca-noxi .box-conheca .box-foto-texto { display: flex; padding-right: 60px; padding-left: 60px; }
+.conheca-noxi .box-conheca .box-foto-texto .box-foto { border: 8px solid #fff; width: 499px; height: 324px; }
+.conheca-noxi .box-conheca .box-foto-texto .box-texto { flex: 1; padding-left: 40px; }
+.conheca-noxi .box-conheca .box-foto-texto .box-texto * { color: #fff; }
+.conheca-noxi .box-conheca .box-foto-texto .box-texto .tit1 { font-weight: bold; font-size: 30px; margin-bottom: 30px; }
+.conheca-noxi .box-conheca .box-foto-texto .box-texto .tit2 { font-weight: bold; font-size: 24px; margin-bottom: 16px; }
+.conheca-noxi .box-conheca .box-foto-texto .box-texto p { font-weight: normal; font-size: 23px; }
+
+.conheca-noxi .borda-bottom { height: 18px; background: var(--verde-padrao); margin-right: 50px; margin-left: 50px; }
+
+
+.nossos-servicos .titulo-area { font-weight: bold; font-size: 30px; color: var(--azul-txt); text-transform: uppercase; text-align: center; margin-bottom: 68px; }
+
+    .serv-template1 { display: flex; margin-bottom: 114px; }
+    .serv-template1 .foto { flex: 1; text-align: right; }
+    .serv-template1 .foto img { max-width: 100%; }
+    .serv-template1 .texto { /* width: 388px; */ width: 430px; padding-left: 88px; display: flex; }
+    .serv-template1 .texto .conteudo { flex: 1; padding-right: 30px; }
+    .serv-template1 .texto .conteudo a { text-decoration: none; display: block; }
+    .serv-template1 .texto .conteudo a:hover { text-decoration: underline; }
+    .serv-template1 .texto .conteudo a span { display: inline-block; }
+    .serv-template1 .texto .conteudo a .titulo { font-weight: bold; font-size: 30px; color: var(--verde-padrao); }
+    .serv-template1 .texto .conteudo a .resumo { font-size: 20px; color: #666; margin-bottom: 20px; }
+    .serv-template1 .texto .conteudo a .saiba-mais { font-size: 20px; color: var(--verde-padrao); }
+    .serv-template1 .texto .barra { margin-top: 13px; width: 3px; height: 130px; background-color: var(--laranja); color: var(--laranja); }
+
+    .serv-template2 .foto { order: 2; text-align: left; }
+    .serv-template2 .texto { order: 1; width: 500px; padding-left: 0px;  }
+    .serv-template2 .texto .conteudo { order: 2; padding-right: 50px; padding-left: 50px; }
+    .serv-template2 .texto .barra { order: 1; width: 130px; height: 3px; background-color: var(--laranja); color: var(--laranja); }
+
+    .serv-template3 .foto { text-align: left; padding-left: 50px; }
+    .serv-template3 .texto { width: auto; flex: 1; padding-left: 0px; display: flex; }
+    .serv-template3 .texto .conteudo { order: 2; padding-left: 70px; }
+    .serv-template3 .texto .barra { order: 1; }
+
+    .box-mais-servicos { text-align: center; margin-bottom: 106px; }
+    .box-mais-servicos .mais-servicos { display: inline-block; font-size: 24px; font-weight: bold; color: #fff; background: var(--azul-txt); padding: 13px 20px; text-decoration: none; }
+
+.sustentabilidade-bg { display: flex; justify-content: start; align-items: center; border-bottom: 16px solid var(--azul-txt); margin-bottom: 100px;  height: 506px; background: url(../img/sustentabilidade-bg.jpg) no-repeat center; background-size: cover; }
+.sustentabilidade-bg .texto-sustentabilidade { width: 50%; padding: 40px 120px 40px 80px; font-weight: bold; background: rgba(29, 78, 90, 0.5); }
+.sustentabilidade-bg .texto-sustentabilidade .titulo { font-size: 30px; color: var(--azul-txt); }
+.sustentabilidade-bg .texto-sustentabilidade .sinopse { font-size: 25px; color: #fff; }
+
+.blog { margin-bottom: 100px; }
+.blog .titulo { font-weight: bold;font-size: 30px;color: var(--verde-padrao);text-transform: uppercase;margin-bottom: 86px; }
+.blog .recentes { display: flex; flex-wrap: wrap;}
+.widget-blog { display: flex; min-width: 40%; flex: 1; margin-right: 30px; margin-bottom: 30px; }
+.widget-blog .foto { width: 200px; height: 270px;}
+.widget-blog .foto img { max-width: 100%; }
+.widget-blog .conteudo { flex: 1; padding: 25px;background-color: #f3f3f3;height: 270px;}
+.widget-blog .conteudo .assunto { font-size: 14px; font-weight: lighter; color: #666;margin-bottom: 10px;}
+.widget-blog .conteudo .titulo { font-size: 20px; font-weight: bold; color: var(--azul-txt);margin-bottom: 20px; }
+.widget-blog .conteudo .sinopse { font-size: 16px;font-weight: normal; color: #666; }
+
+section.clientes .titulo { font-weight: bold;font-size: 30px;color: var(--azul-txt);text-align: center;margin-bottom: 52px;}
+section.clientes { margin-bottom: 100px; }
+
+@media (max-width: 1180px) { /* 1180 */
+    /* p funcionar até 1024 */
+
+    .logo-menu .logo {
+        padding-left: 25px;
+        width: 129px;
+    }
+    .logo-menu .logo img {
+        max-width: 100%;
+    }
+    nav {
+        padding-right: 20px;
+    }
+    .style-home-header .titulo-slider {
+        line-height: 54px;
+    }
+    .style-home-header .titulo-slider .frase {
+        font-size: 57px;
+    }
+
+    nav li a {
+        font-size: 14px;
+    }
+
+    .style-clientes-home div div {
+        padding: 0 20px;
+    }
+
+    footer .logo {
+        margin-bottom: 25px;
+    }
+    footer .endereco {
+        font-size: 21px;
+    }
+    footer .email, 
+    footer .email a {
+        font-size: 25px;
+    }
+    footer .container-fluid {
+        min-height: 300px;
+    }
+
+
+    .lista-clientes .cliente .brd {
+        height: 190px;
+        padding: 20px;
+    }
+
+} /* (max-width: 1180px) */
+
+@media (max-width: 900px) { /* 862 */
+    .logo-menu {
+        height: 80px;
+    }
+    .logo-menu .logo {
+        width: 100px;
+    }
+    nav li a {
+        font-size: 13px;
+    }
+    nav li {
+        padding: 0 10px;
+    }
+
+
+    .conheca-noxi .box-conheca .box-foto-texto .box-texto .tit1 {
+        font-size: 20px;
+    }
+    .conheca-noxi .box-conheca .box-foto-texto .box-texto .tit2 {
+        font-size: 16px;
+    }
+    .conheca-noxi .box-conheca .box-foto-texto .box-texto p {
+        font-size: 13px;
+    }
+    .conheca-noxi .box-conheca .box-foto-texto .box-foto {
+        width: 280px;
+    }
+
+
+    .blog .container {
+        max-width: 800px;
+    }
+    .widget-blog .foto {
+        width: 150px;
+        height: 205px;
+    }
+    .widget-blog .conteudo {
+        height: 205px;
+    }
+    .widget-blog .conteudo {
+        padding: 15px;
+    }
+    .widget-blog .conteudo .assunto {
+        font-size: 12px;
+    }
+    .widget-blog .conteudo .titulo {
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+    .widget-blog .conteudo .sinopse {
+        font-size: 12px;
+    }
+
+
+} /* (max-width: 900px) */
+
+@media (max-width: 768px) { /* 768 */ 
+
+    .sustentabilidade-bg .texto-sustentabilidade .titulo {
+        font-size: 25px;
+    }
+    .sustentabilidade-bg .texto-sustentabilidade .sinopse {
+        font-size: 20px;
+    }
+
+    .blog .container {
+        max-width: 720px;
+    }
+    .blog .titulo {
+        margin-bottom: 50px;
+    }
+    .widget-blog .foto {
+        width: 159px;
+        overflow: hidden;
+    }
+    .widget-blog .conteudo {
+        padding: 12px;
+    }
+    .widget-blog .conteudo .titulo {
+        font-size: 11px;
+    }
+    .widget-blog .conteudo .sinopse {
+        font-size: 11px;
+    }
+
+    /* conheca a noxi / empresa */
+    header .container-fluid {
+        padding-top: 24px;
+        min-height: 300px;
+    }
+    header h1 {
+        margin-top: 110px;
+    }
+    .titulo-secao,
+    .widget-foto-texto h2 { font-size: 20px; }
+    .widget-foto-texto .texto {
+        font-size: 16px;
+    }
+
+    .txt-empresa-3 .titulo-detalhe {
+        padding-left: 20px;
+    }
+
+    .geral p {
+        font-size: 16px;
+    }
+
+    footer .logo {
+        width: 100px;
+    }
+    footer .logo img {
+        max-width: 100%;
+    }
+
+
+    .titulo-padrao .title {
+        font-size: 18px;
+    }
+    .glider-prev, .glider-next {
+        font-size: 30px;
+    }
+
+    .lista-clientes .cliente .brd {
+        height: 130px;
+    }    
+
+} /* (max-width: 768px) */
+
+@media (max-width: 425px) { /* 320 */ 
+
+
+
+    header {
+        margin-bottom: 50px;
+    }
+
+    header .menu--icon {
+        display: flex;
+        margin-right: 25px;
+    }
+    header .menu--icon div {
+        height: 3px;
+        background-color: var(--azul-txt);
+    }
+    nav {
+        display: none;
+    }
+    
+
+    .style-home-header .titulo-slider {
+        line-height: 26px;
+        width: 80%;
+        padding-top: 150px;
+        padding-left: 30px;
+    }
+    .style-home-header .titulo-slider .frase {
+        font-size: 25px;
+    }
+    .style-home-header .titulo-slider .saiba-mais {
+        font-size: 17px;
+        text-align: left;
+    }
+
+
+
+
+    .conheca-noxi .box-conheca {
+        padding: 30px 0;
+    }
+    .conheca-noxi .box-conheca .box-foto-texto {
+        flex-direction: column;
+        padding-right: 25px;
+        padding-left: 25px;
+    }
+    .conheca-noxi .box-conheca .box-foto-texto .box-foto {
+        width: 100%;
+        border: 5px solid #fff;
+        margin-bottom: 25px;
+    }
+    .conheca-noxi .box-conheca .titulo {
+        font-size: 18px;
+        margin-bottom: 25px;
+    }
+    .conheca-noxi .box-conheca .box-foto-texto .box-texto {
+        padding-left: 0;
+    }
+    .conheca-noxi .box-conheca .box-foto-texto .box-texto .tit1 {
+        font-size: 17px;
+    }
+    .conheca-noxi .box-conheca .box-foto-texto .box-texto .tit2 {
+        font-size: 13px;
+    }
+    .conheca-noxi .box-conheca .box-foto-texto .box-texto p {
+        font-size: 12px;
+    }
+
+
+    .nossos-servicos .titulo-area {
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+
+    .serv-template1 {
+        margin-bottom: 70px;
+        flex-direction: column;
+    }
+    .serv-template1 .foto {
+        margin-bottom: 20px;
+    }
+    .serv-template1 .texto {
+        width: 100%;
+        padding-left: 25px;
+    }
+    .serv-template1 .texto .conteudo a .titulo {
+        font-size: 15px;
+    }
+    .serv-template1 .texto .conteudo a .resumo {
+        font-size: 12px;
+    }
+    .serv-template1 .texto .conteudo a .saiba-mais {
+        font-size: 13px;
+    }
+    .serv-template2 .texto {
+        margin-bottom: 20px;
+    }
+    .serv-template3 .foto {
+        padding-left: 0px;
+    }
+
+
+
+    .sustentabilidade-bg {
+        margin-bottom: 60px;
+    }
+    .sustentabilidade-bg .texto-sustentabilidade {
+        width: 100%;
+    }
+    .sustentabilidade-bg .texto-sustentabilidade {
+        padding: 50px;
+    }
+
+    .box-mais-servicos .mais-servicos {
+        font-size: 14px;
+    }
+    .box-mais-servicos {
+        margin-bottom: 60px;
+    }
+
+
+    .blog {
+        margin-bottom: 30px;
+    }
+    .blog .titulo {
+        margin-bottom: 30px;
+        font-size: 18px;
+    }
+    .widget-blog {
+        display: flex;
+        min-width: 100%;
+    }
+    .widget-blog .foto {
+        width: 110px;
+    }
+
+
+
+    section.clientes {
+        margin-bottom: 60px;
+    }
+    section.clientes .titulo {
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+
+
+
+    footer .logo {
+        margin-bottom: 15px;
+    }
+
+    footer .logo img {
+        max-width: 100px;
+    }
+    footer .endereco {
+        font-size: 15px;
+    }
+    footer .email, 
+    footer .email a {
+        font-size: 18px;
+    }
+    footer .container-fluid {
+        min-height: 270px;
+    }
+
+
+
+    .widget-foto-texto {
+        margin-bottom: 0;
+        flex-direction: column;
+    }
+    .opc-2 .foto {
+        order: 1;
+    }
+    .widget-foto-texto .foto {
+        height: 150px;
+        width: 100%;
+        margin-bottom: 0;
+    }
+    .opc-3 .foto,
+    .opc-2 .foto {
+        margin-bottom: 50px;
+    }
+    .opc-3 .titulo-detalhe,
+    .opc-2 .titulo-detalhe {
+        margin-bottom: 20px;
+    }
+    .widget-foto-texto .texto .bg {
+        width: 100%;
+        margin-left: 0;
+        padding: 0;
+    }
+    .widget-foto-texto.opc-2 .texto .bg {
+        width: 100%;
+        margin-right: 0;
+    }
+    .widget-foto-texto.opc-3 .texto .bg {
+        margin-left: 0;
+    }
+
+
+    /* .geral-clientes .container {
+        padding-left: 0;
+        padding-right: 0;
+    } */
+    .geral-clientes .box-linha .vertical {
+        bottom: 70px;
+    }
+    .geral-clientes .box-linha {
+        margin-bottom: 0px;
+    }
+    .lista-clientes {
+        justify-content: space-between;
+    }
+    .lista-clientes .cliente {
+        padding: 6px;
+        width: 50%;
+    }
+    .formulario-clientes {
+        width: 100%;
+        padding-left: 0px;
+        margin-bottom: 100px;
+    }
+    .formulario-clientes .titulo-form {
+        flex-direction: column;
+    }
+
+    .foto.txt-responsabilidade-2 {
+        margin-bottom: 0;
+    }
+
+
+
+    .contato {
+        flex-direction: column;
+    }
+    .contato .formulario {
+        padding: 0;
+        margin-bottom: 50px;
+    }
+    .contato .formulario div {
+        padding: 3px;
+    }
+    .contato .endereco {
+        width: 100%;
+    }
+
+
+} /* (max-width: 425px) */

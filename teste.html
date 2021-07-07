@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+    <link rel="stylesheet" href="assets/css/glider.css">
+</head>
+<body>
+    <style>
+        body {
+            background: rgb(245, 25, 25);
+        }
+        .carrossel-empresa-box {
+            border: 1px solid #000;
+            width: 50%;
+            position: relative;
+            background: rgb(124, 122, 122);
+            margin-left: 50px;
+        }
+    </style>
+
+    <div class="carrossel-empresa-box">
+        <div class="carrossel-empresa">
+            <div>teste 1</div>
+            <div>teste 2</div>
+            <div>teste 3</div>
+            <div>teste 4</div>
+            <div>teste 5</div>
+        </div>        
+
+        <button aria-label="Previous" class="glider-prev">«</button>
+        <button aria-label="Next" class="glider-next">»</button>
+        <div role="tablist" class="dots"></div>
+    </div>
+    <script>
+        window.addEventListener('load', function(){
+            new Glider(document.querySelector('.carrossel-empresa'), {
+                slidesToShow: 3,
+                dots: '#dots',
+                arrows: {
+                    prev: '.glider-prev',
+                    next: '.glider-next'
+                }
+            })
+        });
+    </script>
+    <br><br><br>
+
+
+
+    <script src="assets/js/glider.js"></script>
+</body>
+</html>
