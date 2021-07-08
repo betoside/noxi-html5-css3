@@ -7,6 +7,38 @@
 }
 
 .dn { display: none !important;}
+.botao-topo {
+    background-color: var(--laranja);
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+    position: fixed;
+    right: 0;
+    top: 90vh;
+    width: 0;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x:hidden;
+    cursor: pointer;
+    z-index: 1;
+
+    transition:all ease .2s;
+
+    -webkit-border-top-left-radius: 10px;
+    -webkit-border-top-right-radius: 10px;
+    -moz-border-radius-topleft: 10px;
+    -moz-border-radius-topright: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
 
 * { font-family: 'Montserrat', sans-serif; color: var(--texto-padrao); }
 header { margin-bottom: 83px; }
@@ -186,10 +218,11 @@ header.secao-home .container-fluid {
 .widget-servico-corpo { margin-bottom: 40px; }
 
 .contato { display: flex; margin-bottom: 20px; }
+.contato-conteudo { margin-bottom: 50px; }
 .contato .formulario { flex: 2; padding-right: 40px; }
 .contato .formulario div { margin-bottom: 30px; }
 .contato .formulario div textarea,
-.contato .formulario div input { width: 100%; padding: 8px 12px; font-size: 22px; color: var(--laranja); }
+.contato .formulario div input { width: 100%; padding: 8px 12px; font-size: 22px; color: var(--azul-txt); }
 .contato .formulario div input::-webkit-input-placeholder { color: var(--laranja); }
 .contato .formulario div input:-moz-placeholder { /* Firefox 18- */ color: var(--laranja); }
 .contato .formulario div input::-moz-placeholder {  /* Firefox 19+ */ color: var(--laranja); }
@@ -484,8 +517,7 @@ section.clientes { margin-bottom: 100px; }
 
 } /* (max-width: 768px) */
 
-@media (max-width: 425px) { /* 320 */ 
-
+@media (max-width: 715px) { /* 320 */ 
 
 
     header {
@@ -500,10 +532,27 @@ section.clientes { margin-bottom: 100px; }
         height: 3px;
         background-color: var(--azul-txt);
     }
+
     nav {
         display: none;
+        /* display: flex; */
     }
-    
+    nav {
+        top: 110px;
+        background: rgba(0, 0, 0, 0.9);
+        width: calc( 100vw - 24px);
+        padding: 10px 0 20px 15px;
+        position: absolute;
+    }
+    nav ul {
+        flex-direction: column;
+    }
+    nav li {
+        padding: 5px 10px;
+    }   
+    nav li a {
+        color: rgba(255, 255, 255, 0.9);
+    }   
 
     .style-home-header .titulo-slider {
         line-height: 26px;
@@ -691,11 +740,17 @@ section.clientes { margin-bottom: 100px; }
         padding-right: 0;
     } */
     .geral-clientes .box-linha .vertical {
-        bottom: 70px;
+        /* bottom: 70px; */
     }
     .geral-clientes .box-linha {
-        margin-bottom: 0px;
+        /* margin-bottom: 0px; */
     }
+    .cliente-conteudo {
+        /* margin-bottom: 30px; */
+        padding-right: 25px;
+    }
+
+
     .lista-clientes {
         justify-content: space-between;
     }
@@ -703,6 +758,11 @@ section.clientes { margin-bottom: 100px; }
         padding: 6px;
         width: 50%;
     }
+    .lista-clientes {
+        margin-bottom: 50px;
+    }
+
+
     .formulario-clientes {
         width: 100%;
         padding-left: 0px;
@@ -711,11 +771,32 @@ section.clientes { margin-bottom: 100px; }
     .formulario-clientes .titulo-form {
         flex-direction: column;
     }
+    .formulario-clientes .titulo-form .title {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .formulario-clientes input,
+    .formulario-clientes textarea {
+        font-size: 16px;
+    }
+    .formulario-clientes div {
+        margin-bottom: 15px;
+    }
+    .formulario-clientes .tel-whats div:nth-child(1),
+    .formulario-clientes .tel-whats div:nth-child(2) {
+        padding: 0;
+    }
+    .formulario-clientes .tel-whats {
+        flex-direction: column;
+    }
+    .bt-form {
+        font-size: 16px;
+    }
+
 
     .foto.txt-responsabilidade-2 {
         margin-bottom: 0;
     }
-
 
 
     .contato {
@@ -730,6 +811,35 @@ section.clientes { margin-bottom: 100px; }
     }
     .contato .endereco {
         width: 100%;
+    }
+    .contato .endereco p {
+        margin-bottom: 30px;
+    }
+
+
+    .contato .formulario {
+        margin-bottom: 70px;
+    }
+    .contato .formulario div textarea, 
+    .contato .formulario div input {
+        padding: 6px;
+        font-size: 16px;
+    }
+    .contato .formulario div {
+        margin-bottom: 15px;
+    }
+    .contato .formulario .tel-whats, 
+    .contato .formulario .cidade-estado {
+        margin-bottom: 0;
+        flex-direction: column;
+    }
+    .contato .formulario .tel-whats div:nth-child(1), 
+    .contato .formulario .cidade-estado div:nth-child(1) {
+        padding-right: 0;
+    }
+    .contato .formulario .tel-whats div:nth-child(2), 
+    .contato .formulario .cidade-estado div:nth-child(2) {
+        padding: 0;
     }
 
 
