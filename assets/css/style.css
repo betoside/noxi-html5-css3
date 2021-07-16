@@ -3,6 +3,7 @@
     --azul-txt: #0b3c54;
     --texto-padrao: #5e5e56;
     --laranja: #ffa800;
+    --laranja-escuro: #c28100;
     --cinza-claro: #bec5c9;
 }
 
@@ -79,6 +80,8 @@ nav li { padding: 0 16px; }
 nav li a { text-decoration: none; font-weight: bold; font-size: 20px; color: var(--azul-txt); }
 nav li a:hover,
 nav .active a { color: var(--verde-padrao); }
+
+
 
 header h1 { margin-top: 142px; color: #fff; width: 100%; width: 100%; max-width: 1230px; padding-left: 33px; }
 
@@ -223,11 +226,11 @@ header.secao-home .container-fluid {
 .contato .formulario div { margin-bottom: 30px; }
 .contato .formulario div textarea,
 .contato .formulario div input { width: 100%; padding: 8px 12px; font-size: 22px; color: var(--azul-txt); }
-.contato .formulario div input::-webkit-input-placeholder { color: var(--laranja); }
-.contato .formulario div input:-moz-placeholder { /* Firefox 18- */ color: var(--laranja); }
-.contato .formulario div input::-moz-placeholder {  /* Firefox 19+ */ color: var(--laranja); }
-.contato .formulario div input:-ms-input-placeholder { color: var(--laranja); }
-.contato .formulario div textarea,::placeholder { color: var(--laranja); }
+.contato .formulario div input::-webkit-input-placeholder { color: var(--laranja-escuro); }
+.contato .formulario div input:-moz-placeholder { /* Firefox 18- */ color: var(--laranja-escuro); }
+.contato .formulario div input::-moz-placeholder {  /* Firefox 19+ */ color: var(--laranja-escuro); }
+.contato .formulario div input:-ms-input-placeholder { color: var(--laranja-escuro); }
+.contato .formulario div textarea,::placeholder { color: var(--laranja-escuro); }
 
 .contato .formulario .tel-whats,
 .contato .formulario .cidade-estado { margin-bottom: 0; display: flex; }
@@ -252,6 +255,23 @@ footer .endereco { margin-bottom: 20px; font-weight: 600;font-size: 30px;color: 
 footer .email,
 footer .email a { font-size: 40px; font-weight: bold; color: #fff; }
 
+.nav-footer,
+.nav-footer li { list-style: none;}
+.nav-footer li { display: inline;padding: 5px 20px;}
+.nav-footer li a { font-size: 23px;font-weight: bold;color: #fff;text-decoration: none;}
+.nav-footer li a:hover,
+.nav-footer li.active a { color: var(--azul-txt); text-decoration: underline;}
+/* 
+            <ul class="nav-footer">
+                <li class="active"><a href="index.html">Home</a></li>                        
+                <li><a href="empresa.html">Sobre a Noxi</a></li>                        
+                <li><a href="servicos.html">Serviços</a></li>                        
+                <li><a href="clientes.html">Clientes</a></li>                        
+                <li><a href="responsabilidades.html">Responsabilidades</a></li>                        
+                <!--li><a href="#">Blog</a></li-->                        
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+*/
 
 .carrossel-contain { position: relative; padding-left: 37px; padding-right: 32px; }
 .glider-prev,
@@ -310,7 +330,7 @@ footer .email a { font-size: 40px; font-weight: bold; color: #fff; }
     .serv-template2 .foto { order: 2; text-align: left; }
     .serv-template2 .texto { order: 1; width: 500px; padding-left: 0px;  }
     .serv-template2 .texto .conteudo { order: 2; padding-right: 50px; padding-left: 50px; }
-    .serv-template2 .texto .barra { order: 1; width: 130px; height: 3px; background-color: var(--laranja); color: var(--laranja); }
+    .serv-template2 .texto .barra { order: 1; width: 110px; height: 3px; background-color: var(--laranja); color: var(--laranja); }
 
     .serv-template3 .foto { text-align: left; padding-left: 50px; }
     .serv-template3 .texto { width: auto; flex: 1; padding-left: 0px; display: flex; }
