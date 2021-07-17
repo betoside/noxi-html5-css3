@@ -186,6 +186,8 @@ header.secao-home .container-fluid {
     background-size: cover;
 }
 
+.olho-secao {padding-right: 30px;}
+
 .box-linha { height: 10px; position: relative; margin-bottom: 50px; }
 .box-linha .vertical { width: 3px; height: 130px; background-color: var(--laranja); position: absolute; right: 0; bottom: 0; }
 
@@ -261,17 +263,6 @@ footer .email a { font-size: 40px; font-weight: bold; color: #fff; }
 .nav-footer li a { font-size: 23px;font-weight: bold;color: #fff;text-decoration: none;}
 .nav-footer li a:hover,
 .nav-footer li.active a { color: var(--azul-txt); text-decoration: underline;}
-/* 
-            <ul class="nav-footer">
-                <li class="active"><a href="index.html">Home</a></li>                        
-                <li><a href="empresa.html">Sobre a Noxi</a></li>                        
-                <li><a href="servicos.html">Serviços</a></li>                        
-                <li><a href="clientes.html">Clientes</a></li>                        
-                <li><a href="responsabilidades.html">Responsabilidades</a></li>                        
-                <!--li><a href="#">Blog</a></li-->                        
-                <li><a href="contato.html">Contato</a></li>
-            </ul>
-*/
 
 .carrossel-contain { position: relative; padding-left: 37px; padding-right: 32px; }
 .glider-prev,
@@ -347,8 +338,9 @@ footer .email a { font-size: 40px; font-weight: bold; color: #fff; }
 
 .blog { margin-bottom: 100px; }
 .blog .titulo { font-weight: bold;font-size: 30px;color: var(--verde-padrao);text-transform: uppercase;margin-bottom: 86px; }
+.container-blog .recentes,
 .blog .recentes { display: flex; flex-wrap: wrap;}
-.widget-blog { display: flex; min-width: 40%; flex: 1; margin-right: 30px; margin-bottom: 30px; }
+.widget-blog { display: flex; min-width: 40%; flex: 1; margin-right: 30px; margin-bottom: 30px; overflow: hidden;}
 .widget-blog .foto { width: 200px; height: 270px;}
 .widget-blog .foto img { max-width: 100%; }
 .widget-blog .conteudo { flex: 1; padding: 25px;background-color: #f3f3f3;height: 270px;}
@@ -379,6 +371,9 @@ section.clientes { margin-bottom: 100px; }
         font-size: 57px;
     }
 
+    nav li {
+        padding: 0px 14px;
+    }
     nav li a {
         font-size: 14px;
     }
@@ -391,7 +386,7 @@ section.clientes { margin-bottom: 100px; }
         margin-bottom: 25px;
     }
     footer .endereco {
-        font-size: 21px;
+        font-size: 18px;
     }
     footer .email, 
     footer .email a {
@@ -401,10 +396,25 @@ section.clientes { margin-bottom: 100px; }
         min-height: 300px;
     }
 
+    .nav-footer li {
+        padding: 5px 8px;
+    }
+    .nav-footer li a {
+        font-size: 17px;
+    }
 
     .lista-clientes .cliente .brd {
         height: 190px;
         padding: 20px;
+    }
+
+    .widget-blog .conteudo .titulo {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .widget-blog .conteudo .sinopse {
+        font-size: 14px;
     }
 
 } /* (max-width: 1180px) */
@@ -441,14 +451,17 @@ section.clientes { margin-bottom: 100px; }
     .blog .container {
         max-width: 800px;
     }
+
+    .widget-blog {
+        margin-right: 15px;
+        margin-bottom: 20px;
+    }
     .widget-blog .foto {
         width: 150px;
         height: 205px;
     }
     .widget-blog .conteudo {
         height: 205px;
-    }
-    .widget-blog .conteudo {
         padding: 15px;
     }
     .widget-blog .conteudo .assunto {
@@ -460,6 +473,11 @@ section.clientes { margin-bottom: 100px; }
     }
     .widget-blog .conteudo .sinopse {
         font-size: 12px;
+    }
+
+    .container {
+        /* max-width: 720px; */
+        max-width: 100%;
     }
 
 
@@ -523,6 +541,12 @@ section.clientes { margin-bottom: 100px; }
         max-width: 100%;
     }
 
+    .nav-footer li {
+        padding: 5px 6px;
+    }
+    .nav-footer li a {
+        font-size: 15px;
+    }
 
     .titulo-padrao .title {
         font-size: 18px;
@@ -719,7 +743,15 @@ section.clientes { margin-bottom: 100px; }
         min-height: 270px;
     }
 
-
+    .nav-footer {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .nav-footer li {
+        display: initial;
+        width: 45%;
+    }
 
     .widget-foto-texto {
         margin-bottom: 0;
