@@ -40,8 +40,29 @@
     -ms-transform: rotate(-90deg);
     transform: rotate(-90deg);
 }
+.botao-topo:hover {color: var(--azul-txt);}
 
 * { font-family: 'Montserrat', sans-serif; color: var(--texto-padrao); }
+
+
+.fancybox-navigation .fancybox-button div {
+    /* background: var(--laranja);  */
+}
+.fancybox-button svg {
+    /* background: var(--verde-padrao); */
+    background: var(--laranja);
+}
+.fancybox-button svg path {
+    color: black;
+}
+.fancybox-infobar span{
+    color: #ccc;
+}
+.fancybox-button--zoom,
+.fancybox-button--thumbs {
+    display: none;
+}
+
 header { margin-bottom: 83px; }
 header .container-fluid { 
     padding-top: 24px; min-height: 443px; background: url(../img/bg-head-empresa-2.jpg) center; 
@@ -138,7 +159,7 @@ header.secao-home .container-fluid {
 
 
 .geral { width: 100%; max-width: 1230px; padding: 0 30px; margin: 0 auto; font-size: 22px; color: var(--texto-padrao); }
-.geral p { margin-bottom: 20px; }
+.geral p { margin-bottom: 30px; }
 .widget-foto-texto { display: flex; margin-bottom: 74px; }
 .widget-foto-texto .foto { width: 48%; }
 .txt-empresa-1 {
@@ -155,6 +176,11 @@ header.secao-home .container-fluid {
 }
 .widget-foto-texto .texto { flex: 1; padding: 57px 0; font-size: 22px; }
 .widget-foto-texto .texto .bg { background: #fff; width: 141%; padding: 40px; margin-left: -41%; }
+
+.texto-complementar {margin-bottom: 80px;}
+.texto-complementar strong {display: block;}
+
+.mailto {font-weight: bold; color: var(--verde-padrao);}
 
 .titulo-secao,
 .widget-foto-texto h2 { font-size: 30px; font-weight: bold; text-transform: uppercase; margin-bottom: 30px; color: var(--verde-padrao); }
@@ -225,10 +251,14 @@ header.secao-home .container-fluid {
 .widget-servico-corpo { margin-bottom: 40px; }
 .widget-servico-corpo p { margin-bottom: 35px; }
 .widget-servico-corpo p strong { font-weight: 600;}
-.widget-servico-corpo h4,
-.widget-servico-corpo h5 { font-weight: 600; text-transform: uppercase; }
-.widget-servico-corpo .topicos {display: flex;flex-wrap: wrap;}
-.widget-servico-corpo .topico {min-width: 31%;max-width: 31%;padding: 25px;margin: 0 10px 10px 0; background: #eee;}
+.topicos {display: flex;flex-wrap: wrap;}
+.topico {min-width: 31%;max-width: 31%;padding: 25px;margin: 0 10px 10px 0; background: #eee;}
+.topico h4,
+.topico h5 { font-weight: 600; text-transform: uppercase; }
+.topico p { margin-bottom: 35px; }
+.topico p strong { font-weight: 600;}
+
+    .topicos-empresa {margin-bottom: 50px;}
 
 .contato { display: flex; margin-bottom: 20px; }
 .contato-conteudo { margin-bottom: 50px; }
@@ -304,9 +334,11 @@ footer .email a { font-size: 40px; font-weight: bold; color: #fff; }
 .conheca-noxi .box-conheca .box-foto-texto .box-foto { border: 8px solid #fff; width: 499px; height: 324px; }
 .conheca-noxi .box-conheca .box-foto-texto .box-texto { flex: 1; padding-left: 40px; }
 .conheca-noxi .box-conheca .box-foto-texto .box-texto * { color: #fff; }
-.conheca-noxi .box-conheca .box-foto-texto .box-texto .tit1 { font-weight: bold; font-size: 30px; margin-bottom: 30px; }
-.conheca-noxi .box-conheca .box-foto-texto .box-texto .tit2 { font-weight: bold; font-size: 24px; margin-bottom: 16px; }
-.conheca-noxi .box-conheca .box-foto-texto .box-texto p { font-weight: normal; font-size: 23px; }
+.conheca-noxi .box-conheca .box-foto-texto .box-texto .tit1 { font-weight: bold; font-size: 22px; margin-bottom: 30px; }
+.conheca-noxi .box-conheca .box-foto-texto .box-texto .tit2 { font-weight: bold; font-size: 20px; margin-bottom: 16px; }
+.conheca-noxi .box-conheca .box-foto-texto .box-texto p { font-weight: normal; font-size: 18px; }
+.conheca-noxi .box-conheca .box-foto-texto .box-texto .saiba-mais { text-align: right; font-weight: 700; text-decoration: none; }
+.conheca-noxi .box-conheca .box-foto-texto .box-texto:hover .saiba-mais a {text-decoration: underline;}
 .conheca-noxi .box-conheca .box-foto-texto * {text-decoration: none;}
 
 .conheca-noxi .borda-bottom { height: 18px; background: var(--verde-padrao); margin-right: 50px; margin-left: 50px; }
@@ -325,6 +357,7 @@ footer .email a { font-size: 40px; font-weight: bold; color: #fff; }
     .serv-template1 .texto .conteudo a .titulo { font-weight: bold; font-size: 30px; color: var(--verde-padrao); }
     .serv-template1 .texto .conteudo a .resumo { font-size: 20px; color: #666; margin-bottom: 20px; }
     .serv-template1 .texto .conteudo a .saiba-mais { font-size: 20px; color: var(--verde-padrao); }
+    .serv-template1 .texto .conteudo a:hover .saiba-mais { color: var(--azul-txt); }
     .serv-template1 .texto .barra { margin-top: 13px; width: 3px; height: 130px; background-color: var(--laranja); color: var(--laranja); }
 
     .serv-template2 .foto { order: 2; text-align: left; }
@@ -339,6 +372,8 @@ footer .email a { font-size: 40px; font-weight: bold; color: #fff; }
 
     .box-mais-servicos { text-align: center; margin-bottom: 106px; }
     .box-mais-servicos .mais-servicos { display: inline-block; font-size: 24px; font-weight: bold; color: #fff; background: var(--azul-txt); padding: 13px 20px; text-decoration: none; }
+    .bt-padrao { display: inline-block; font-size: 24px; font-weight: bold; color: #fff; background: var(--azul-txt); padding: 13px 20px; text-decoration: none; transition:all ease .2s; }
+    .bt-padrao:hover {color: var(--laranja); }
 
 .sustentabilidade-bg { display: flex; justify-content: start; align-items: center; border-bottom: 16px solid var(--azul-txt); margin-bottom: 100px;  height: 506px; background: url(../img/sustentabilidade-bg.jpg) no-repeat center; background-size: cover; }
 .sustentabilidade-bg .texto-sustentabilidade { width: 50%; padding: 40px 120px 40px 80px; font-weight: bold; background: rgba(29, 78, 90, 0.5); }
@@ -348,8 +383,9 @@ footer .email a { font-size: 40px; font-weight: bold; color: #fff; }
 
 .blog { margin-bottom: 100px; }
 .blog .titulo { font-weight: bold;font-size: 30px;color: var(--verde-padrao);text-transform: uppercase;margin-bottom: 86px; }
+.container-blog { margin-bottom: 100px;}
 .container-blog .recentes,
-.blog .recentes { display: flex; flex-wrap: wrap;}
+.blog .recentes { display: flex; flex-wrap: wrap; margin-bottom: 30px;}
 .blog .recentes-home { margin-bottom: 30px;}
 .widget-blog { display: flex; min-width: 40%; flex: 1; margin-right: 30px; margin-bottom: 30px; overflow: hidden;}
 .widget-blog .foto { width: 200px; height: 270px;}
@@ -359,6 +395,24 @@ footer .email a { font-size: 40px; font-weight: bold; color: #fff; }
 .widget-blog .conteudo .titulo { font-size: 20px; font-weight: bold; color: var(--azul-txt);margin-bottom: 20px; }
 .widget-blog .conteudo .sinopse { font-size: 16px;font-weight: normal; color: #666; }
 .widget-blog .conteudo a { text-decoration: none;}
+
+.widget-blog:hover a .foto { opacity: .9;}
+.widget-blog:hover .conteudo { background-color: #d4d4d4;}
+.widget-blog:hover .conteudo .assunto {color: #222;}
+/* .widget-blog:hover .conteudo .titulo {color: var(--laranja);} */
+.widget-blog:hover .conteudo .sinopse {color: #222;}
+/* .widget-blog .conteudo a { text-decoration: none;} */
+
+
+.botao-carregar-mais {text-align: center;}
+
+.post { margin-bottom: 100px; }
+.post .titulo { font-size: 30px; font-weight: bold; color: var(--laranja);margin-bottom: 40px; }
+.post .olho { font-size: 16px;font-weight: 700; color: var(--texto-padrao); font-style: italic; margin-bottom: 30px; }
+/* .post .corpo {  } */
+.post .corpo img { margin-bottom: 30px; max-width: 100%; }
+.post .voltar { text-align: right; }
+
 
 section.clientes .titulo { font-weight: bold;font-size: 30px;color: var(--azul-txt);text-align: center;margin-bottom: 52px;}
 section.clientes { margin-bottom: 100px; }
@@ -576,7 +630,7 @@ section.clientes { margin-bottom: 100px; }
     }    
 
 
-    .widget-servico-corpo .topico,
+    .topico,
     .widget-servico-corpo p { font-size: 14px; }
     .widget-servico-corpo h4,
     .widget-servico-corpo h5 { font-size: 18px; }
@@ -917,7 +971,7 @@ section.clientes { margin-bottom: 100px; }
     }
 
 
-    .widget-servico-corpo .topico {
+    .topico {
         min-width: 100%;
         max-width: 100%;
     }

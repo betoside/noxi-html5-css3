@@ -71,10 +71,14 @@
                             </h4>
                             <p>
                                 O procedimento é supervisionado através de acompanhamento rigoroso, com contagem das partículas e enquadramento dentro da normas exigidas. 
-                            </p>
+                            </p>                            
+                        </div>
+                        
+                        <div class="topico">
+                            <h4>
+                                controle e prevenção de desgaste
+                            </h4>
                             <p>
-                                <strong>Total controle e prevenção de desgaste em: </strong>
-                                <br>
                                 Servo válvulas
                                 <br>
                                 Válvulas proporcionais
@@ -147,7 +151,6 @@
                                 for (let serv01 = 1; serv01 < 6; serv01++) {
                                     template01 += '<div>';
                                     template01 += '    <div class="caixa-miniatura">';
-                                                                                                 // assets/img/servicos/flushing-com-oleo/noxi_flushing_oleo01.jpg
                                     template01 += '        <a data-fancybox="gallery-empresa" href="assets/img/servicos/flushing-com-oleo/noxi_flushing_oleo0'+serv01+'.jpg">';
                                     template01 += '            <div class="veu-lupa">';
                                     template01 += '                <img src="assets/img/ico-lupa.png" alt="">';
@@ -544,6 +547,13 @@
                     <p>
                         <strong>AMZ</strong> é a divisão de produtos químicos da empresa <strong>Noxi Química Ltda</strong>, direcionada para processos de tratamento de superfícies metálicas, onde se destaca o <strong>Gel Decapante e Apassivante</strong> para <strong>Aços Inoxidáveis</strong>.
                     </p>
+                    <p>                        
+                        Informações: WhatsApp: <strong>19 97107 4533</strong>.
+                        <br>
+                        E-mail: <a class="mailto" href="mailto:comercial@amzquimica.com.br">comercial@amzquimica.com.br</a>.
+                    </p>
+
+
                     
 
                     <div class="topicos">
@@ -606,27 +616,30 @@
                         <div class="glider">
 
                             <!-- 
-                                img
-                                img/
-                                big-1
-                                carrossel-empresa-1.jpg
+                                img/amz-quimica/noxi_amz01.jpg
+                                img/amz-quimica/noxi_amz0
                              -->
 
                              <script>
                                 let template06 = '';
-                                for (let serv06 = 1; serv06 < 4; serv06++) {
+                                let zero;
+                                for (let serv06 = 1; serv06 < 11; serv06++) {
+                                    if(serv06 < 10){
+                                        zero = 0;
+                                    } else {
+                                        zero = '';
+                                    }
                                     template06 += '<div>';
                                     template06 += '    <div class="caixa-miniatura">';
-                                    template06 += '        <a data-fancybox="gallery-empresa" href="assets/img/big-'+serv06+'.jpg">';
+                                    template06 += '        <a data-fancybox="gallery-empresa" href="assets/img/servicos/amz-quimica/noxi_amz'+zero+serv06+'.jpg">';
                                     template06 += '            <div class="veu-lupa">';
                                     template06 += '                <img src="assets/img/ico-lupa.png" alt="">';
                                     template06 += '            </div>';
                                     template06 += '        </a>';
-                                    template06 += '        <img src="assets/img/carrossel-empresa-'+serv06+'.jpg" alt="">';
+                                    template06 += '        <img src="assets/img/servicos/amz-quimica/noxi_amz'+zero+serv06+'.jpg" alt="">';
                                     template06 += '    </div>';
                                     template06 += '</div>';
                                 }
-                                document.write(template06);
                                 document.write(template06);
                             </script>
 
