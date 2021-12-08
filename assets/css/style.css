@@ -239,7 +239,11 @@ header.secao-home .container-fluid {
 .contato .formulario div input:-moz-placeholder { /* Firefox 18- */ color: var(--laranja-escuro); }
 .contato .formulario div input::-moz-placeholder {  /* Firefox 19+ */ color: var(--laranja-escuro); }
 .contato .formulario div input:-ms-input-placeholder { color: var(--laranja-escuro); }
-.contato .formulario div textarea,::placeholder { color: var(--laranja-escuro); }
+.contato .formulario div textarea::placeholder { color: var(--laranja-escuro); }
+.contato .formulario div textarea::-webkit-input-placeholder { color: var(--laranja-escuro); }
+.contato .formulario div textarea:-moz-placeholder { /* Firefox 18- */ color: var(--laranja-escuro); }
+.contato .formulario div textarea::-moz-placeholder {  /* Firefox 19+ */ color: var(--laranja-escuro); }
+.contato .formulario div textarea:-ms-input-placeholder { color: var(--laranja-escuro); }
 
 .contato .formulario .tel-whats,
 .contato .formulario .cidade-estado { margin-bottom: 0; display: flex; }
@@ -257,6 +261,14 @@ header.secao-home .container-fluid {
 .contato .endereco strong { color: var(--verde-padrao); }
 .contato .endereco p { margin-bottom: 50px; }
 .contato .endereco .box-linha { height: 1px; margin-bottom: 0px; }
+
+.resposta {
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 30px;
+    color: var(--azul-txt);
+    text-align: center;
+}
 
 footer .container-fluid { min-height: 399px; display: flex; flex-direction: column; align-items: center; padding-top: 25px; background: url(../img/rodape.jpg) no-repeat center; }
 footer .logo { margin-bottom: 15px; }
