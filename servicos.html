@@ -545,7 +545,7 @@
                 </div>
                 <div class="widget-servico-corpo">
                     <p>
-                        <strong>AMZ</strong> é a divisão de produtos químicos da empresa <strong>Noxi Química Ltda</strong>, direcionada para processos de tratamento de superfícies metálicas, onde se destaca o <strong>Gel Decapante e Apassivante</strong> para <strong>Aços Inoxidáveis</strong>.
+                        <strong>AMZ</strong> é a divisão de produtos químicos da empresa <strong>Noxi Química Ltda</strong>, direcionada para processos de tratamento de superfícies metálicas, onde se destaca o <strong>Gel AMZ Decapante e Apassivante</strong> para <strong>Aços Inoxidáveis</strong>.
                     </p>
                     <p>                        
                         Informações: WhatsApp: <strong>19 97107 4533</strong>.
@@ -623,15 +623,49 @@
                              <script>
                                 let template06 = '';
                                 let zero;
+                                let template06pdf
                                 for (let serv06 = 1; serv06 < 8; serv06++) { // serv06 < 11
                                     if(serv06 < 10){
                                         zero = 0;
                                     } else {
                                         zero = '';
                                     }
+
+                                    switch (serv06) {
+                                        case 1:
+                                            template06pdf = "<a href=\'assets/img/servicos/amz-quimica/noxi_amz"+zero+serv06+".pdf\' target=\'_blank\'><img src=\'assets/img/servicos/amz-quimica/noxi_amz"+zero+serv06+".png\'></a>";
+                                            break;
+                                        
+                                        case 2:
+                                            template06pdf = "<a href=\'assets/img/servicos/amz-quimica/noxi_amz"+zero+serv06+".pdf\' target=\'_blank\'><img src=\'assets/img/servicos/amz-quimica/noxi_amz"+zero+serv06+".png\'></a>";
+                                            break;
+                                        
+                                        case 3:
+                                            template06pdf = "<a href=\'assets/img/servicos/amz-quimica/noxi_amz"+zero+serv06+".pdf\' target=\'_blank\'><img src=\'assets/img/servicos/amz-quimica/noxi_amz"+zero+serv06+".png\'></a>";
+                                            break;
+                                        
+                                        case 4:
+                                            template06pdf = "<a href=\'assets/img/servicos/amz-quimica/noxi_amz"+zero+serv06+".pdf\' target=\'_blank\'><img src=\'assets/img/servicos/amz-quimica/noxi_amz"+zero+serv06+".png\'></a>";
+                                            break;
+                                        
+                                        case 5:
+                                            template06pdf = "<a href=\'assets/img/servicos/amz-quimica/noxi_amz"+zero+serv06+".pdf\' target=\'_blank\'><img src=\'assets/img/servicos/amz-quimica/noxi_amz"+zero+serv06+".png\'></a>";
+                                            break;
+                                        
+                                        case 6:
+                                            template06pdf = "<a href=\'assets/img/servicos/amz-quimica/noxi_amz"+zero+serv06+".pdf\' target=\'_blank\'><img src=\'assets/img/servicos/amz-quimica/noxi_amz"+zero+serv06+".png\'></a>";
+                                            break;
+                                        
+                                        case 7:
+                                            template06pdf = "";
+                                            break;
+
+                                        }
+
+
                                     template06 += '<div>';
                                     template06 += '    <div class="caixa-miniatura">';
-                                    template06 += '        <a data-fancybox="servicos-06" href="assets/img/servicos/amz-quimica/noxi_amz'+zero+serv06+'.jpg">';
+                                    template06 += '        <a data-fancybox="servicos-06" data-caption="'+template06pdf+'" href="assets/img/servicos/amz-quimica/noxi_amz'+zero+serv06+'.jpg">';
                                     template06 += '            <div class="veu-lupa">';
                                     template06 += '                <img src="assets/img/ico-lupa.png" alt="">';
                                     template06 += '            </div>';
